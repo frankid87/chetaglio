@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+	<mapping>
+		<class-a>com.chetaglio.model.entity.Negozio</class-a>
+		<class-b>com.chetaglio.service.dto.NegozioDTO</class-b>
+		<field-exclude>
+			<a>immagini</a>
+			<b>immagini</b>
+		</field-exclude>
+		<field-exclude>
+			<a>servizi</a>
+			<b>servizi</b>
+		</field-exclude>
+		<field-exclude>
+			<a>commenti</a>
+			<b>commenti</b>
+		</field-exclude>
+		<field-exclude>
+			<a>citta</a>
+			<b>citta</b>
+		</field-exclude>
+		<field-exclude>
+			<a>idCategoria</a>
+			<b>idCategoria</b>
+		</field-exclude>
+	</mapping>
+	
+	<mapping>
+		<class-a>com.chetaglio.model.entity.Commento</class-a>
+		<class-b>com.chetaglio.service.dto.CommentoDTO</class-b>
+		<field-exclude>
+			<a>utente</a>
+			<b>utente</b>
+		</field-exclude>
+		<field-exclude>
+			<a>negozio</a>
+			<b>negozio</b>
+		</field-exclude>
+	</mapping>
+	
+	<mapping>
+		<class-a>com.chetaglio.model.entity.Immagine</class-a>
+		<class-b>com.chetaglio.service.dto.ImmagineDTO</class-b>
+		<field-exclude>
+			<a>negozio</a>
+			<b>negozio</b>
+		</field-exclude>
+	</mapping>
+	
+	<mapping>
+		<class-a>com.chetaglio.model.entity.Servizio</class-a>
+		<class-b>com.chetaglio.service.dto.ServizioDTO</class-b>
+		<field-exclude>
+			<a>negozio</a>
+			<b>negozio</b>
+		</field-exclude>
+	</mapping>
+	
+	<mapping>
+		<class-a>com.chetaglio.model.entity.Utente</class-a>
+		<class-b>com.chetaglio.service.dto.UtenteDTO</class-b>
+		<field-exclude>
+			<a>commenti</a>
+			<b>ruoli</b>
+		</field-exclude>
+	</mapping>
+</mappings>       
